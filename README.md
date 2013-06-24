@@ -16,14 +16,14 @@ $ npm install forcifier
 
 ```js
 forcifier.deforceList('id,Name,Field1__c,field2__c');
-# id,name,field1,field2
+=> id,name,field1,field2
 ```
 
 2 . 'Enforces' a list of fields names so that "`id,name,field1,field2`" is converted to "`id,name,field1__c,field2__c`".
 
 ```js
 forcifier.enforceList('id,name,field1,field2');
-# id,name,field1__c,field2__c
+=> id,name,field1__c,field2__c
 ```  
 
 3 . 'Deforces' JSON keys from Force.com so that all keys will be lowercase and will have "`__c`" removed. For example, the following JSON returned by nforce will look like:
