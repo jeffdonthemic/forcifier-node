@@ -12,21 +12,21 @@ $ npm install forcifier
 
 ## Key Features
 
-1. 'Deforces' a list of field names so that "`id,Name,Field1__c,field2__c`" is converted to "`id,name,field1,field2`".
+1 . 'Deforces' a list of field names so that "`id,Name,Field1__c,field2__c`" is converted to "`id,name,field1,field2`".
 
 ```js
 forcifier.deforceList('id,Name,Field1__c,field2__c');
 # id,name,field1,field2
 ```
 
-2. 'Enforces' a list of fields names so that "`id,name,field1,field2`" is converted to "`id,name,field1__c,field2__c`".
+2 . 'Enforces' a list of fields names so that "`id,name,field1,field2`" is converted to "`id,name,field1__c,field2__c`".
 
 ```js
 forcifier.enforceList('id,name,field1,field2');
 # id,name,field1__c,field2__c
 ```  
 
-3. 'Deforces' JSON keys from Force.com so that all keys will be lowercase and will have "`__c`" removed. For example, the following JSON returned by nforce will look like:
+3 . 'Deforces' JSON keys from Force.com so that all keys will be lowercase and will have "`__c`" removed. For example, the following JSON returned by nforce will look like:
 
 ```json
 {
@@ -83,7 +83,7 @@ Invoking forcifier.deforceJson(my_json) will remove the trailing '__c' from all 
 }
 ```
 
-4. 'Enforces' JSON keys so that all non-standard Force.com fields will be appended with "__c". This is useful when you want to POST or PUT data back to Force.com. Enforcing your JSON will add '__c' to fields where necessary. 
+4 . 'Enforces' JSON keys so that all non-standard Force.com fields will be appended with "__c". This is useful when you want to POST or PUT data back to Force.com. Enforcing your JSON will add '__c' to fields where necessary. 
 
 ```json
 {
