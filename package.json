@@ -1,7 +1,7 @@
 {
   "name": "forcifier",
-  "version": "0.0.1",
-  "description": "Node.js module to do awesome stuff.",
+  "version": "0.0.2",
+  "description": "Node.js module provides utility functions for dealing with Force.com fields to make them pretty and easier to work with.",
   "main": "index.js",
   "author": "Jeff Douglas",
   "keywords": [
@@ -14,13 +14,17 @@
     "rest",
     "nforce"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "https://github.com/jeffdonthemic/forcifier-node"
   },
   "dependencies": {
-    "underscore": "~1.4.4",    
+    "underscore": "~1.4.4",
     "string": "~1.4.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.11.0",
+    "should": "~1.2.2"    
   },
   "engines": {
     "node": "*"
@@ -28,5 +32,5 @@
   "license": {
     "type": "MIT",
     "url": "https://raw.github.com/jeffdonthemic/forcifier-node/master/LICENSE"
-  }  
+  }
 }
