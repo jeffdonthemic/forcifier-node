@@ -1,0 +1,32 @@
+{
+  "name": "forcifier",
+  "version": "0.0.1",
+  "description": "Node.js module to do awesome stuff.",
+  "main": "index.js",
+  "author": "Jeff Douglas",
+  "keywords": [
+    "salesforce",
+    "salesforce.com",
+    "force.com",
+    "database.com",
+    "sfdc",
+    "forcedotcom",
+    "rest",
+    "nforce"
+  ],
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/jeffdonthemic/forcifier-node"
+  },
+  "dependencies": {
+    "underscore": "~1.4.4",    
+    "string": "~1.4.0"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "license": {
+    "type": "MIT",
+    "url": "https://raw.github.com/jeffdonthemic/forcifier-node/master/LICENSE"
+  }  
+}
