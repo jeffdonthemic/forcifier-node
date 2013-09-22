@@ -1,6 +1,6 @@
 {
   "name": "forcifier",
-  "version": "0.0.3",
+  "version": "0.0.3", 
   "description": "Node.js module provides utility functions for dealing with Force.com fields to make them pretty and easier to work with.",
   "main": "index.js",
   "author": "Jeff Douglas",
