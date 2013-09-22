@@ -24,23 +24,31 @@ function enforceList(fields) {
 
 // removes '__c' from each key in the JSON and makes keys lowercase
 function deforceJson(data) {
-  var deforced = {};
+  var deforced = _.isArray(data) ? [] : {};
   for (key in data) {
     if (_.isObject(data[key]) && !_.isFunction(data[key])) {
-      deforced[key.toLowerCase()] = deforceJson(data[key]);
+      if (_.isArray(data)) {
+        deforced.push(deforceJson(data[key]));
+      } else {
+        deforced[key.toLowerCase()] = deforceJson(data[key]);
+      }
     } else {
       deforced[s(key.toLowerCase()).replaceAll('__c','').s] = data[key];
     }
   }
   return deforced;
 }
-
+ 
 // adds '__c' to any key not in the skipList
 function enforceJson(data) {
-  var enforced = {};
+  var enforced = _.isArray(data) ? [] : {};
   for (key in data) {
     if (_.isObject(data[key]) && !_.isFunction(data[key])) {
-      enforced[key.toLowerCase()] = enforceJson(data[key]);
+      if (_.isArray(data)) {
+        enfored.push(enforceJson(data[key]));
+      } else {
+        enforced[key.toLowerCase()] = enforceJson(data[key]);
+      }
     } else {
       if (_.indexOf(skipList, key) == -1) {
         enforced[key + '__c'] = data[key];
