@@ -1,6 +1,6 @@
 {
   "name": "forcifier",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Node.js module provides utility functions for dealing with Force.com fields to make them pretty and easier to work with.",
   "main": "index.js",
   "author": "Jeff Douglas",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "mocha": "~1.11.0",
-    "should": "~1.2.2"    
+    "should": "~1.2.2"
   },
   "engines": {
     "node": "*"
