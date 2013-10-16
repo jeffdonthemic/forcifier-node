@@ -1,5 +1,7 @@
 # Forcifier [![Build Status](https://travis-ci.org/jeffdonthemic/forcifier-node.png?branch=master)](https://travis-ci.org/jeffdonthemic/forcifier-node) 
 
+https://www.codeship.io/projects/01313c50-1873-0131-166d-6666bd390a3e/status
+
 Forcifier is a node package that provides utility functions for dealing with Force.com fields to make them pretty and easier to work with. Since Force.com is case insensitive, REST calls may return JSON with keys such as `Country_code_AND_City__c`. The forcifier package will convert JSON keys and list of fields into something like `country_code_and_city` which makes life much easier when writing applications in Node.js. 
 
 This module is particularly useful when used in conjunction with the awesome [nforce package](https://github.com/kevinohara80/nforce).
